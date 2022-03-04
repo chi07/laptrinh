@@ -80,3 +80,40 @@ func main() {
 }
 
 ```
+
+# Các loại kiểu dữ liệu
+Trong chương trình phần mềm cần phải định nghĩa trước những kiểu dữ liệu và lưu trữ nó ở dạng thích hợp nhất để chương trình chạy nhanh và tốn ít bộ nhớ.
+Ví du: Để lưu tuổi của 1 người thì ta chỉ cần dùng kiểu `unit8` là đủ. Lý do, tuổi thọ của con người <= 120 tuổi và không thể là số âm
+
+1. Kiểu dữ liệu 
+> Kiểu dữ liệu boolean (Đúng sai)
+- bool
+> Kiểu dữ liệu số
+* int8, int16, int32, int64, int
+* uint8, uint16, uint32, uint64, uint
+* float32, float64
+* complex64, complex128
+* byte
+
+
+> Kiểu dữ liệu chuỗi
+* rune
+* string
+
+# Số nguyên có dấu
+`int8`: B
+`size`: 8 bits
+`range`: -128 to 127
+
+`int16`: biểu diễn số nguyên có dấu 16 bit
+size: 16 bits
+range: -32768 to 32767
+
+`int32`: biểu diễn số nguyên có dấu 32 bit
+`size`: 32 bits
+`range`: -2147483648 to 2147483647
+
+`int64`: biểu diễn số nguyên có dấu 64 bit
+`size`: 64 bits
+`range`: -9223372036854775808 to 9223372036854775807
+
