@@ -117,3 +117,27 @@ range: -32768 to 32767
 `size`: 64 bits
 `range`: -9223372036854775808 to 9223372036854775807
 
+# Phép gán
+> Để thiết lập giá trị của một biến, người ta thiết lập giá trị cho biến đó thông qua phép gán giá trị của biến.
+
+Ví dụ :
+height = 8;
+length = 10;
+width = 12;
+
+Trước khi thiết lập giá trị cho biến thì biến đó cần phải được khai báo.
+
+Ví dụ :
+int height = 8; hoặc
+int height;
+height = 8;
+
+Ngoài ra một biến có thể được gán giá trị bằng một biểu thức. Ví dụ :
+int volume = height * length* width;
+
+Bài tập: 
+> Viết chương trình nhập vào tháng của một năm, cho biết số ngày của tháng đó. Nếu tháng nhập vào <1 hoặc >12 thì thông báo "Không tồn tại tháng này".
+
+- Các tháng 1, 3, 5, 7, 8, 10, 12 có 31 ngày
+- Các tháng 4, 6, 9, 11 có 30 ngày
+- Nếu là tháng 2 thì yêu cầu nhập thêm năm, nếu là năm nhuận thì tháng 2 có 29 ngày, còn lại là 28 ngày. Năm nhuận là năm chia hết cho 4.
