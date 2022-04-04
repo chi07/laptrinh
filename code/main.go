@@ -6,21 +6,38 @@ import (
 )
 
 func main() {
-	var a float64 = 1
-	var b float64 = 2
-	var c float64 = -3
-	var delta float64
+	n := 200
+	K := 10
 
-	delta = b*b - 4*a*c
+	a := math.Sqrt(float64(n))
+	fmt.Println(a)
 
-	if delta < 0 {
-		fmt.Println("Phương trình vô nghiệm")
-	} else if delta == 0 {
-		x := -b / (2 * a)
-		fmt.Println("Phương trình có nghiệm duy nhất: ", x)
-	} else {
-		x1 := (-b + math.Sqrt(delta)) / 2 * a
-		x2 := (-b - math.Sqrt(delta)) / 2 * a
-		fmt.Println("Phương trình có 2 nghiệm phân biệt x1 =", x1, " và x2 =", x2)
+	for i := 0; i < n; i++ {
+		for j := 1; j < K; j++ {
+			fmt.Println("i * j = ", i*j)
+		}
+	}
+
+	m := 3
+	y := 2022
+
+	m = 5
+	switch m {
+	case 1, 3, 5, 7, 8, 10, 12:
+		fmt.Printf("thang %v co 31 ngay", m)
+	case 4, 6, 9, 11:
+		fmt.Printf("thang %v co 30 ngay", m)
+	case 2:
+		if y == 0 {
+			fmt.Printf("hay nhap vao nam ")
+		} else {
+			if y != 0 && y%4 == 0 {
+				fmt.Printf("thang %v nam %v co 29 ngay", m, y)
+			} else {
+				fmt.Printf("thanng %v nam %v co 28 ngay ", m, y)
+			}
+		}
+	default:
+		fmt.Println("thang nay khong hop le")
 	}
 }
